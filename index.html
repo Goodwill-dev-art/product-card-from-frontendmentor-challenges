@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* styling the body element */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: hsl(47, 88%, 63%);
+      }
+      /* styling the main containers  (content) */
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 350px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.2rem;
+        border-radius: 12px;
+        margin-bottom: 1em;
+        box-shadow: 10px 10px;
+      }
+      /* styling every sub-container */
+      /* 1st the image  */
+      .header-image {
+        border-radius: 5px;
+      }
+
+      /* /sub-containers */
+
+      .header-image,
+      .first-subcontainer,
+      .second-container {
+        margin-bottom: 1em;
+        font-family: 'figtree', sans-serif;
+        font-weight: 500;
+      }
+      .first-subcontainer > h1 {
+        margin-bottom: 0.4rem;
+        background-color: hsl(47, 88%, 63%);
+        width: min-content;
+        border-radius: 5px;
+        padding: 0.3rem 0.6rem;
+        font-size: 1.4em;
+        font-family: 'figtree', sans-serif;
+      }
+      .second-container > h2 {
+        transition: all ease-in-out;
+        margin-bottom: 0.5em;
+      }
+      .second-container > h2:hover {
+        color: hsl(47, 88%, 63%);
+      }
+      .second-container > p {
+        opacity: 0.7;
+      }
+
+      /* styling the third-container  */
+      .third-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* justify-content: space-between; */
+      }
+      /* footer section  */
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media (max-width: 400px) {
+        .container {
+          max-width: 280px;
+          padding: 1rem;
+          /* box-sizing: border-box; */
+        }
+        .header-image {
+          max-width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./assets/images/illustration-article.svg"
+        class="header-image"
+        alt=""
+      />
+      <div class="first-subcontainer">
+        <h1>Learning</h1>
+        <p>Published 21 Dec 2023</p>
+      </div>
+      <div class="second-container">
+        <h2>HTML & CSS foundations</h2>
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="third-container">
+        <img src="assets/images/image-avatar.webp" alt="" />
+        Greg Hooper
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Goodwill_dev_art</a>.
+    </div>
+  </body>
+</html>
